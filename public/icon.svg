@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stopColor="#16553f" />
+      <stop offset="70%" stopColor="#0a2e22" />
+      <stop offset="100%" stopColor="#051a13" />
+    </radialGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#fde047" />
+      <stop offset="50%" stopColor="#e0a93b" />
+      <stop offset="100%" stopColor="#92400e" />
+    </linearGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#ffea79" />
+      <stop offset="60%" stopColor="#f97316" />
+      <stop offset="100%" stopColor="#ef4444" stopOpacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background with rounded corners (safe for maskable / standard) -->
+  <rect width="512" height="512" rx="105" fill="url(#bgGrad)" />
+  <rect x="14" y="14" width="484" height="484" rx="92" fill="none" stroke="url(#goldBorder)" strokeWidth="12" strokeOpacity="0.8" />
+  <rect x="26" y="26" width="460" height="460" rx="80" fill="none" stroke="#f6e9c8" strokeWidth="2" strokeDasharray="8 6" strokeOpacity="0.4" />
+
+  <!-- Tropical palm silhouette background -->
+  <g opacity="0.25">
+    <path d="M420 400 Q425 240 370 140" stroke="#f6e9c8" strokeWidth="8" fill="none" />
+    <path d="M370 140 Q290 80 230 160" stroke="#f6e9c8" strokeWidth="6" fill="none" />
+    <path d="M370 140 Q350 40 440 60" stroke="#f6e9c8" strokeWidth="6" fill="none" />
+    <path d="M370 140 Q450 90 490 190" stroke="#f6e9c8" strokeWidth="6" fill="none" />
+  </g>
+
+  <!-- Character Haci Center -->
+  <g transform="translate(156, 120) scale(1.0)">
+    <!-- Shadow -->
+    <ellipse cx="100" cy="255" rx="75" ry="14" fill="#000" opacity="0.4" />
+
+    <!-- Pants -->
+    <path d="M62 170 L138 170 L146 245 L108 245 L100 195 L92 245 L54 245 Z" fill="#1e3a8a" />
+    <!-- Shoes -->
+    <path d="M54 245 h38 v8 h-42 z M108 245 h38 l4 8 h-42 z" fill="#111" />
+
+    <!-- Shirt (Yellow Cuban tank / shirt) -->
+    <path d="M52 100 Q100 88 148 100 L158 175 L42 175 Z" fill="#eab308" />
+
+    <!-- Arms -->
+    <path d="M52 104 L30 168 L44 172 L64 118 Z" fill="#c98f62" />
+    <path d="M148 104 L170 168 L156 172 L136 118 Z" fill="#c98f62" />
+
+    <!-- Tattoos -->
+    <g transform="translate(34, 134) scale(0.8)">
+      <line x1="10" y1="4" x2="10" y2="24" stroke="#0f172a" strokeWidth="2.5" />
+      <line x1="4" y1="10" x2="16" y2="10" stroke="#0f172a" strokeWidth="2.5" />
+      <circle cx="10" cy="4" r="3" stroke="#0f172a" strokeWidth="2" fill="none" />
+    </g>
+
+    <!-- Neck & Head -->
+    <rect x="88" y="82" width="24" height="22" fill="#b97d52" />
+    <ellipse cx="100" cy="58" rx="36" ry="40" fill="#c98f62" />
+
+    <!-- Gold Chain -->
+    <path d="M84 94 Q100 118 116 94" fill="none" stroke="url(#goldBorder)" strokeWidth="4" strokeLinecap="round" />
+
+    <!-- Hair -->
+    <path d="M62 56 Q58 14 100 12 Q144 14 138 56 Q130 36 100 34 Q70 36 62 56 Z" fill="#111" />
+    <path d="M72 30 l-8 -10 l14 4 l2 -12 l10 10 l8 -12 l6 12 l12 -8 l-2 12 l12 -2 l-8 12 Z" fill="#111" />
+
+    <!-- Ears -->
+    <ellipse cx="62" cy="62" rx="5" ry="9" fill="#b97d52" />
+    <ellipse cx="138" cy="62" rx="5" ry="9" fill="#b97d52" />
+
+    <!-- Eyes & Smile -->
+    <circle cx="86" cy="62" r="4.5" fill="#111" />
+    <circle cx="114" cy="62" r="4.5" fill="#111" />
+    <circle cx="88" cy="60" r="1.5" fill="#fff" />
+    <circle cx="116" cy="60" r="1.5" fill="#fff" />
+    <path d="M99 64 L96 72 L103 72" stroke="#a06742" strokeWidth="2" fill="none" strokeLinecap="round" />
+    <path d="M90 79 Q100 89 110 79" stroke="#6b3a22" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+
+    <!-- Welder Mask on forehead -->
+    <g transform="translate(72, 24)">
+      <rect x="0" y="0" width="56" height="18" rx="6" fill="#2d3748" stroke="#e0a93b" strokeWidth="2" />
+      <rect x="14" y="4" width="28" height="9" rx="2" fill="#10b981" />
+    </g>
+
+    <!-- Welding Torch with spark in hand -->
+    <g transform="translate(152, 155)">
+      <rect x="0" y="0" width="10" height="24" rx="2" fill="#374151" />
+      <rect x="2" y="-12" width="6" height="14" fill="#9ca3af" />
+      <circle cx="5" cy="-22" r="18" fill="url(#spark)" />
+      <polygon points="5,-24 1,-16 9,-16" fill="#fff" />
+      <text x="-4" y="-14" fontSize="22">🔥</text>
+    </g>
+  </g>
+
+  <!-- Banner Bottom with Cuban Gold typography -->
+  <g transform="translate(256, 440)">
+    <rect x="-140" y="-30" width="280" height="52" rx="14" fill="#0a2e22" stroke="url(#goldBorder)" strokeWidth="3" />
+    <text x="0" y="6" text-anchor="middle" font-family="'Fraunces', serif, system-ui" font-size="28" font-weight="900" fill="#fdf8ee" letter-spacing="3">
+      HACI
+    </text>
+  </g>
+</svg>

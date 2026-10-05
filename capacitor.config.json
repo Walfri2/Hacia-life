@@ -1,0 +1,9 @@
+{
+  "appId": "com.haci.delasoldaduraalayuma",
+  "appName": "Vámonos para la yuma",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}

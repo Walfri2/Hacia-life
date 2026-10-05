@@ -1,0 +1,6 @@
+{
+  "name": "Vámonos para la yuma",
+  "description": "Juego incremental de Haci luchando y progresando en La Habana para cumplir su sueño de irse pa' la yuma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

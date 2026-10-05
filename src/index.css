@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+:root {
+  --verde-oscuro: #0a2e22;
+  --verde: #0f3d2e;
+  --verde2: #16553f;
+  --oro: #e0a93b;
+  --oro-brillante: #f5c258;
+  --crema: #fdf8ee;
+  --crema-papel: #f6e9c8;
+  --rojo: #b3262e;
+  --rojo-claro: #d93842;
+}
+
+body {
+  margin: 0;
+  background-color: var(--verde-oscuro);
+  color: var(--crema);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+.font-serif-vintage {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+/* Custom scrollbars for clean paper texture */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 61, 46, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--oro);
+  border-radius: 3px;
+}
+
+/* Floating click animations */
+@keyframes floatUpFade {
+  0% {
+    transform: translateY(0px) scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-85px) scale(1.15);
+    opacity: 0;
+  }
+}
+
+.float-up {
+  animation: floatUpFade 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  pointer-events: none;
+}
+
+/* Sparkle/sparks animation for welding */
+@keyframes sparkScatter {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx, 20px), var(--ty, -30px)) scale(0);
+    opacity: 0;
+  }
+}
+
+.spark-particle {
+  animation: sparkScatter 0.6s ease-out forwards;
+  pointer-events: none;
+}
+
+/* Subtle continuous breathing idle animation */
+@keyframes haciBreathe {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.008);
+  }
+}
+
+.animate-haci-idle {
+  animation: haciBreathe 3.5s ease-in-out infinite;
+}
+
+/* Eye blinking animation */
+@keyframes blinkEffect {
+  0%, 94%, 98%, 100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.08);
+  }
+}
+
+.animate-blink {
+  transform-origin: center;
+  animation: blinkEffect 4s ease-in-out infinite;
+}
+
+/* Steam rise from hot cuban cafecito */
+@keyframes steamFloat {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-8px) scale(1.1) translateX(2px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-16px) scale(1.3) translateX(-2px);
+    opacity: 0;
+  }
+}
+
+.animate-steam {
+  animation: steamFloat 1.2s ease-out infinite;
+}
+
+/* Lightbulb Eureka Pop */
+@keyframes bulbGlow {
+  0% {
+    transform: scale(0.4) translateY(10px);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.25) translateY(-5px);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.95) translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bulb-pop {
+  animation: bulbGlow 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Flying dollar bill */
+@keyframes moneyFlutter {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-45px) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+.animate-money-flutter {
+  animation: moneyFlutter 1.4s ease-out infinite;
+}
+
+/* Action comic pop badge */
+@keyframes actionBadgePop {
+  0% {
+    transform: scale(0.4) rotate(-8deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.12) rotate(3deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.97) rotate(-1deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.animate-action-badge {
+  animation: actionBadgePop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Gold gleam pulse */
+@keyframes goldShine {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(245, 194, 88, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 10px rgba(245, 194, 88, 0.95)) drop-shadow(0 0 18px rgba(254, 240, 138, 0.8));
+  }
+}
+
+.animate-gold-shine {
+  animation: goldShine 1s ease-in-out infinite;
+}
+
+/* Fast pedaling / working vibration */
+@keyframes workVibe {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-1.5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(1px) rotate(1deg);
+  }
+}
+
+.animate-work-vibe {
+  animation: workVibe 0.18s ease-in-out infinite;
+}
